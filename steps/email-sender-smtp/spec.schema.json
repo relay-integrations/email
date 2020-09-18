@@ -27,7 +27,13 @@
           "type": "boolean",
           "description": "Should the Transport Layer Security protocol be used?"
         }
-      }
+      },
+      "required": [
+        "host",
+        "port",
+        "username",
+        "password"
+      ]
     },
     "from": {
       "type": "string",
@@ -44,6 +50,10 @@
     "bcc": {
       "type": "string",
       "description": "The email address(es) you would like the email to be bcc'd to."
+    },
+    "subject": {
+      "type": "string",
+      "description": "The subject line you would like to include in the email."
     },
     "body": {
       "type": "object",
@@ -64,6 +74,11 @@
       "desciption": "The maximum amount of time the process is allowed to take."
     }
   },
-  "required": [],
+  "required": [
+    "server",
+    "from",
+    "to",
+    "body"
+  ],
   "additionalProperties": false
 }
