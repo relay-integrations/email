@@ -1,0 +1,83 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "server": {
+      "type": "object",
+      "description": "A map containing the configuratino of your SMTP server.",
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "The host where your SMTP server is available."
+        },
+        "port": {
+          "type": "integer",
+          "description": "The port the server is accessible on."
+        },
+        "username": {
+          "type": "string",
+          "description": "The username used for authentication into the server."
+        },
+        "password": {
+          "type": "string",
+          "description": "The password used for authentication into the server."
+        },
+        "tls": {
+          "type": "boolean",
+          "description": "Should the Transport Layer Security protocol be used?"
+        }
+      },
+      "required": [
+        "host",
+        "port",
+        "username",
+        "password"
+      ]
+    },
+    "from": {
+      "type": "string",
+      "description": "The email address you would like the email to come from."
+    },
+    "to": {
+      "type": "string",
+      "description": "The email address(es) you would like the email to be sent to."
+    },
+    "cc": {
+      "type": "string",
+      "description": "The email address(es) you would like the email to be cc'd to."
+    },
+    "bcc": {
+      "type": "string",
+      "description": "The email address(es) you would like the email to be bcc'd to."
+    },
+    "subject": {
+      "type": "string",
+      "description": "The subject line you would like to include in the email."
+    },
+    "body": {
+      "type": "object",
+      "description": "A map with the configration for the body of the email.",
+      "properties": {
+        "html": {
+          "type": "string",
+          "description": "The HTML you would like to send in the body of the email"
+        },
+        "text": {
+          "type": "string",
+          "description": "Text for a plain text version of the email"
+        }
+      }
+    },
+    "timeoutSeconds": {
+      "type": "integer",
+      "desciption": "The maximum amount of time the process is allowed to take."
+    }
+  },
+  "required": [
+    "server",
+    "from",
+    "to"
+  ],
+  "additionalProperties": false
+}
