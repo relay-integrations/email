@@ -77,8 +77,7 @@
   "required": [
     "server",
     "from",
-    "to",
-    "body"
+    "to"
   ],
   "additionalProperties": false
 }
