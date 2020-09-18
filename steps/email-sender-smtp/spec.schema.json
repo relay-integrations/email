@@ -4,8 +4,30 @@
   "type": "object",
   "properties": {
     "server": {
-      "type": "string",
-      "description": "A string representing the location and authenication of your SMTP server"
+      "type": "object",
+      "description": "A map containing the configuratino of your SMTP server.",
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "The host where your SMTP server is available."
+        },
+        "port": {
+          "type": "integer",
+          "description": "The port the server is accessible on."
+        },
+        "username": {
+          "type": "string",
+          "description": "The username used for authentication into the server."
+        },
+        "password": {
+          "type": "string",
+          "description": "The password used for authentication into the server."
+        },
+        "tls": {
+          "type": "boolean",
+          "description": "Should the Transport Layer Security protocol be used?"
+        }
+      }
     },
     "from": {
       "type": "string",
@@ -38,7 +60,7 @@
       }
     },
     "timeoutSeconds": {
-      "type": "number",
+      "type": "integer",
       "desciption": "The maximum amount of time the process is allowed to take."
     }
   },
