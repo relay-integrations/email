@@ -43,3 +43,22 @@ schemas:
   spec: 
     source: file
     file: spec.schema.json
+
+examples:
+- summary: Send an email with a preconfigured SMTP server
+  content: 
+    apiVersion: 1
+    kind: Step
+    name: send-email
+    spec: 
+      server: 
+        host: !Secret smtp-host
+        port: 25
+        username: !Secret smtp-username
+        password: !Secret smtp-password
+      from: !Parameter from
+      to: !Parameter to
+      subject: !Parameter subject
+      body: 
+        html: !Parameter message
+    
