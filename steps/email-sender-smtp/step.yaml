@@ -14,7 +14,7 @@ name: email-sender-smtp
 version: 3
 
 # High-level phrase describing what this action does. Required.
-summary: SMTP
+summary: Send email
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
