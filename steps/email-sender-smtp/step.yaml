@@ -50,6 +50,7 @@ examples:
     apiVersion: v1
     kind: Step
     name: send-email
+    image: relaysh/email-sender-smtp
     spec: 
       server: 
         host: !Secret smtp-host
