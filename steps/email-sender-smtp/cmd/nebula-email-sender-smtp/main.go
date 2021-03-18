@@ -4,17 +4,20 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"os"
 	"time"
 
-	"github.com/puppetlabs/nebula-sdk/pkg/log"
-	"github.com/puppetlabs/nebula-sdk/pkg/taskutil"
 	"github.com/puppetlabs/nebula-steps/email-sender-smtp/pkg/sender"
+	"github.com/puppetlabs/relay-sdk-go/pkg/log"
+	"github.com/puppetlabs/relay-sdk-go/pkg/taskutil"
 	gomail "gopkg.in/gomail.v2"
 )
 
 func main() {
-	specURL := flag.String("spec-url", os.Getenv(taskutil.SpecURLEnvName), "url to fetch the spec from")
+	u, err := taskutil.MetadataSpecURL()
+	if err != nil {
+		log.FatalE(err)
+	}
+	specURL := flag.String("spec-url", u, "url to fetch the spec from")
 
 	flag.Parse()
 

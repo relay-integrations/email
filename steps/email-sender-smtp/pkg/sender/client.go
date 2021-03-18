@@ -13,7 +13,7 @@ import (
 	"gopkg.in/gomail.v2"
 )
 
-const LocalName = "nebula.puppet.com"
+const LocalName = "relay.sh"
 
 type Sender struct {
 	Client *smtp.Client
