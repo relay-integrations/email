@@ -325,8 +325,9 @@ github.com/mitchellh/go-testing-interface v1.0.0/go.mod h1:kRemZodwjscx+RGhAo8eI
 github.com/mitchellh/gox v0.4.0/go.mod h1:Sd9lOJ0+aimLBi73mGofS1ycjY8lL3uZM3JPS42BGNg=
 github.com/mitchellh/iochan v1.0.0/go.mod h1:JwYml1nuB7xOzsp52dPpHFffvOCDupsG0QubkSMEySY=
 github.com/mitchellh/mapstructure v0.0.0-20160808181253-ca63d7c062ee/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
-github.com/mitchellh/mapstructure v1.1.2 h1:fmNYVwqnSfB9mZU6OS2O6GsXM+wcskZDuKQzvN1EDeE=
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
+github.com/mitchellh/mapstructure v1.4.1 h1:CpVNEelQCZBooIPDn+AR3NpivK/TIKU8bDxdASFVQag=
+github.com/mitchellh/mapstructure v1.4.1/go.mod h1:bFUtVrKA4DC2yAKiSyO/QUcy7e+RRV2QTWOzhPopBRo=
 github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742/go.mod h1:bx2lNnkwVCuqBIxFjflWJWanXIb3RllmbCylyMrvgv0=
@@ -383,8 +384,8 @@ github.com/puppetlabs/leg/mathutil v0.1.0 h1:9O/fsCWA0oEybKLtxKOPGl1lHA2etLbopwk
 github.com/puppetlabs/leg/mathutil v0.1.0/go.mod h1:1Ni3bNk/721eP9PAhkTsx2CoXUEP636UKEx5mIlph3s=
 github.com/puppetlabs/leg/timeutil v0.2.0 h1:f5Dbivofe8zoFu3GxMopNeCI2x0rlKq6dJqZ1t10/b8=
 github.com/puppetlabs/leg/timeutil v0.2.0/go.mod h1:0O728lh6OxaBE6bJVFuPTUpCrtAb33g0Ne8DwHgZOr8=
-github.com/puppetlabs/relay-sdk-go v1.16.6 h1:Fka6IuouG0uYlOv5rxQ3Xt9omCKkRJbg4Av4NsZmghU=
-github.com/puppetlabs/relay-sdk-go v1.16.6/go.mod h1:CTuJbQ4mvhTLvcaQG7fe/zix+A5bZ9sk4gk2HI8TCFo=
+github.com/puppetlabs/relay-sdk-go v1.17.0 h1:/5rAxMr48fvQ0K8+1z7Ck9A7JQVydtZqdPzCn7DD6GU=
+github.com/puppetlabs/relay-sdk-go v1.17.0/go.mod h1:goyhPGaADMnoONUIAX2mh4Igmlau2i64dmHWy/LXng8=
 github.com/quasilyte/go-consistent v0.0.0-20190521200055-c6f3937de18c/go.mod h1:5STLWrekHfjyYwxBRVRXNOSewLJ3PWfDJd1VyTS21fI=
 github.com/quasilyte/go-ruleguard v0.2.1-0.20201030093329-408e96760278/go.mod h1:2RT/tf0Ce0UDj5y243iWKosQogJd8+1G3Rs2fxmlYnw=
 github.com/quasilyte/regex/syntax v0.0.0-20200407221936-30656e2c4a95/go.mod h1:rlzQ04UMyJXu/aOvhd8qT+hvDrFpiwqp8MRXDY9szc0=

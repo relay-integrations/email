@@ -1,7 +1,6 @@
 package sender
 
 import (
-	"encoding/json"
 	"net/mail"
 )
 
@@ -9,13 +8,8 @@ type AddressSpec struct {
 	*mail.Address
 }
 
-func (as *AddressSpec) UnmarshalJSON(data []byte) (err error) {
-	var s string
-	if err := json.Unmarshal(data, &s); err != nil {
-		return err
-	}
-
-	as.Address, err = mail.ParseAddress(s)
+func (as *AddressSpec) UnmarshalText(data []byte) (err error) {
+	as.Address, err = mail.ParseAddress(string(data))
 	return
 }
 

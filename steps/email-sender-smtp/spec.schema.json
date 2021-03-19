@@ -37,18 +37,31 @@
     },
     "from": {
       "type": "string",
+      "format": "email",
       "description": "The email address you would like the email to come from."
     },
     "to": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "email"
+      },
       "description": "The email address(es) you would like the email to be sent to."
     },
     "cc": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "email"
+      },
       "description": "The email address(es) you would like the email to be cc'd to."
     },
     "bcc": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "email"
+      },
       "description": "The email address(es) you would like the email to be bcc'd to."
     },
     "subject": {
@@ -71,7 +84,7 @@
     },
     "timeoutSeconds": {
       "type": "integer",
-      "desciption": "The maximum amount of time the process is allowed to take."
+      "description": "The maximum amount of time the process is allowed to take."
     }
   },
   "required": [
