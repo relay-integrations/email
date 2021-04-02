@@ -18,7 +18,7 @@ summary: Send email
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: This email step allows you send an email through a self defined SMTP server
+description: Send an email through a self defined SMTP server.
 
 
 # URL or path relative to this file to an icon or icons representing this
